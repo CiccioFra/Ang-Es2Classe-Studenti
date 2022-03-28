@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Studente } from 'src/app/model-interface/studente';
+import { Studente } from 'src/app/models/studente';
+import { StudenteService } from 'src/app/services/studente.service';
 
 @Component({
   selector: 'app-add-student',
@@ -9,9 +10,9 @@ import { Studente } from 'src/app/model-interface/studente';
 export class AddStudentComponent implements OnInit {
   // 1 inizializzo variabile/array
   studenti: Studente = {
-    id: number,
-    nome: string,
-    cognome: string
+    // id: number,
+    nome: '',
+    cognome: ''
   };
   // 2 importoi servizio primavo
   constructor(private studenteService: StudenteService) { }
