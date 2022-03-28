@@ -1,0 +1,19 @@
+- App componente
+    -   1° componente
+        --  add-student
+            *   Nome (test); 
+            *   Cogmone (test); 
+            *   add (button)
+    -   2° componente
+        --  student-list
+            *   tabella riepilogativa dei dati: id, nome, cognome
+                **  id =>   *ngFor="let item of array; let index as i" //prendo l'indice dell'array
+            *   edit (button);
+            *   remove (button);
+                // codice simile a: this.student = this.student.slice(i,1);
+                // funzione slice serve a rimuovere elemento dell'array in base al suo infice
+    -   3° componente
+        --  edit-student
+            *   nome
+            *   cognome
+Tutti e 3 comumicano con student.service
