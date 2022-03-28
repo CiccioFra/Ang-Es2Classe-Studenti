@@ -1,1 +1,28 @@
-<p>add-student works!</p>
+<p>Aggiungi uno studente alla Classe!</p>
+<table>
+    <tr>
+        <td><span> Nome </span></td>   <td><input type="text" name="nomeStudente" id="" value="{{studente.nome}}" placeholder="nome dello studente"></td>
+    </tr>
+    <tr>
+        <td><span> Cognome </span></td>   <td><input type="text" name="cognomeStudente" id="" value="{{studente.cognome}}" placeholder="cognome dello studente"></td>
+    </tr>
+    <div>
+        <td><button (clic)>Aggiungi Studente</button></td>
+    </div>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th>nome</th>   <th>cognome</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="">
+            <td></td> <td></td>
+        </tr>
+    </tbody>
+</table>
+<div>
+    <button type="submit"></button>
+</div>
