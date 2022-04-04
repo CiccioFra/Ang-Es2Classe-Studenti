@@ -10,9 +10,9 @@ import { StudenteService } from 'src/app/services/studente.service';
 export class AddStudentComponent implements OnInit {
   // 1 inizializzo variabile/array
   studenti: Studente = {
-    // id: number,
-    nome: '',
-    cognome: ''
+    // id: number,    id: 1,
+    nome: "string",
+    cognome: "string"
   };
   // 2 importoi servizio primavo
   constructor(private studenteService: StudenteService) { }
