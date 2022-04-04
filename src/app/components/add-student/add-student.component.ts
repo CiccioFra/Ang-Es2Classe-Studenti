@@ -10,7 +10,7 @@ import { StudenteService } from 'src/app/services/studente.service';
 export class AddStudentComponent implements OnInit {
   // 1 inizializzo variabile/array
   studenti: Studente = {
-    // id: number,    id: 1,
+    id: 1,
     nome: "string",
     cognome: "string"
   };
