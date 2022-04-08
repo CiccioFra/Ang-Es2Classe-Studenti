@@ -11,14 +11,21 @@ export class AddStudentComponent implements OnInit {
   // 1 inizializzo variabile/array
   studenti: Studente = {
     id: 1,
-    nome: "string",
-    cognome: "string"
+    nome: "nomeStudente",
+    cognome: "cognomeStudente"
   };
+  studSelezionato?: Studente;
+
   // 2 importoi servizio primavo
   constructor(private studenteService: StudenteService) { }
 
   ngOnInit(): void {
   // 3 riempio studente con quello che mi restituisce il service
+  }
+
+  addStudente(addStud: Studente): void{
+    this.studSelezionato = addStud;
+    //ma qua dovrei farci qualcosa??
   }
 
 }
